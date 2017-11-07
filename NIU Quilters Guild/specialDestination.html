@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<link href="huskie.ico" rel="icon" type="image/x-icon" />
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+</script>
+</head>
+<body>
+<div id="grad1">
+<div class = "background">
+<div id = "header">
+<table width="85%">
+<tr><td>
+<p><center><font size ="7" color="#7EC0EE" face="verdana" ><b> Huskie </b></font><img src ="niu.jpg" alt= "niu" height= "100" width= "100"><font size="7" color="#7EC0EE" face="verdana"><b>Air </b></font></center><br>
+</td>
+</tr></table></div>
+<div id="menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="planeinfo.html">Plane Info</a></li>
+<li><a href="pilotinfo.html">Pilot Info</a></li>
+<li><a href="charterFlight.html">Charter a Flight</a></li>
+<li class="active">Request Special Destination</li>
+
+<li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</div>
+ 
+<br>
+<form name="specialDestination" action="mailto:pennymcintire@niu.edu?sub=Request special destination">
+<table align="center">
+<tr>
+<td colspan="2">
+<span style="color:#7EC0EE;font:verdana">Please provide your information so that we help you better.</span>
+</td>
+</tr>
+<tr><td colspan="2"><br/></td></tr>
+<tr>
+<td>Contact name<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="name" required/></td>
+</tr>
+<tr>
+<td>Contact no<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="contactNo" required/></td>
+</tr>
+<tr>
+<td>Email<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="email" required/></td>
+</tr>
+<tr>
+<td>Requesting destination<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="destination" required/></td>
+</tr>
+<tr>
+<td>Why is this exciting to you</td>
+<td><textarea cols="28 rows="4" type="text" name="description"></textarea></td>
+</tr>
+<tr>
+<td>When would you like to travel<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="datepicker" id="datepicker" required/></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="submit"/>&nbsp&nbsp&nbsp&nbsp
+<input type="reset" value = "reset"/>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>
